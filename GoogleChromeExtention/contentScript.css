@@ -1,0 +1,48 @@
+.smWhoAmIStatus {
+  z-index: 9999;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: auto;
+  background: #00ff89;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.smTileElm {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+}
+
+.smTileCharacterName {
+  display: flex;
+  align-self: center;
+  margin: 0 auto;
+  background: white;
+  font-size: 500%;
+}
+
+.smTileOffline {
+  background: white;
+  opacity: 0.6;
+}
+
+.smMyTurn .smEndTurnBtn {
+  animation-name: outlineHalo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes outlineHalo {
+  from {
+    box-shadow: yellow 0px 0px 4px 0px
+  }
+  to {
+    box-shadow: yellow 0px 0px 18px 10px;
+  }
+}
